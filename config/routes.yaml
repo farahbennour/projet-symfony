@@ -1,3 +1,7 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+
+conference:
+    path: /conference
+    controller: App\Controller\ConferenceController::index

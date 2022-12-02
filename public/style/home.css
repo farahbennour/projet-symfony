@@ -1,0 +1,271 @@
+*{
+box-sizing: border-box;
+}
+
+.tetedupage{
+    position: fixed ;
+    display: flex;
+    background-color:  #f3cf6c  ;
+    width: 100%;
+    top: 0;
+    margin:auto;
+}
+.tete-list{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    
+}
+
+#cart-btn{
+        margin-top: 8px;
+        color:rgb(40, 40, 40);
+        cursor: pointer;
+        font-size: 1.75rem;
+        margin-left: 40%;
+        justify-content: space-evenly;
+
+}
+
+
+#photo_home {
+   
+    width: 100%;
+    height: 600px;
+    display: block;   
+ }
+
+#logo {
+    width: 60px; 
+    height: 60px;
+    margin-right: 20% ;
+    margin-left: 2cm;
+}
+#home {
+    text-align: center;
+  }
+.text1 {
+    position: absolute;
+    top:30%;
+    right: 66%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: fangsong;
+    font-size: 44px ;
+}
+.text2 {
+    position: absolute;
+    top:50%;
+    right:55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px ;
+}
+.cart-items-container{
+    position: absolute;
+    top:100%; right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding:0 1.5rem;
+}
+
+.cart-items-container:active{
+    right: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 7px ;
+	padding:0px
+}
+
+ul li {
+	width:  80px ;
+	float: left;
+    
+}
+
+li a {
+	display : block ;
+    color : #272626;
+	padding: 8px 0px 8px 16px ;
+	text-decoration:inherit;
+    text-transform: uppercase;
+}
+.tete-list a:hover{
+   background: #ffffffec ; 
+   border-radius: 0.3rem
+}
+
+#img_about{
+    width: "800" ;
+    height:"800" ;
+    margin-left: 10%;
+}
+#img_contact{
+    width: "700" ;
+    height:"300" ;
+    margin-left: 10%;
+}
+.transiter2{
+    margin-left:60% ;
+}
+.transiter1{
+    float:left ;
+    margin: left 1cm;
+}
+#id{
+    margin: top 10% ; font-family: fangsong; font-size: 20px ; margin : left 10% ;
+}
+
+#menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem ;
+    margin-left: 5px;
+   
+    
+}
+
+#menu-container .box {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background: rgb(254, 250, 250);
+    border: 1px solid rgb(160, 51, 51);
+}
+#menu-container .box:hover{
+    box-shadow:10px 10px 20px 20px #969292 inset;
+}
+
+
+
+#menu-container img{
+    width : 70vw;
+    height : 70vh;
+    max-width : 400px;
+    max-height : 400px;
+    object-fit: contain;
+    object-position: center;
+    padding: 20px;
+    border-radius: 0.5rem;
+    margin-left: 40px;
+}
+#menu-container .box a {
+    justify-content: center;
+    font-size: 1rem ;
+    font-weight: 600 ;
+    text-transform: uppercase;
+    margin: 0.5rem 0 0.5rem;
+    margin-left: 140px;
+}
+
+#menu-container .box a:visited {
+    color:rgb(160, 51, 51);
+}
+
+
+#menu-container .box .content {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+#menu-container .box .content p {
+    padding: 0 1rem ;
+    color: rgb(5, 5, 5);
+    background-color: #f3cf6c;
+    border-radius: 4px;
+    font-weight: 500;
+    
+}
+#menu-container .box .content input{
+    padding: 0 1rem;
+    color: rgb(22, 21, 21);
+    border: 2px solid #f3cf6c;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+#menu-container .box .content input:hover{
+    transition: 0.2s all linear;
+    background: #f3d172;
+}
+#menu-container .box:hover{
+    background:  #e2e2e2 ;
+}
+
+
+.bas-du-page{
+        background: #f3d172;
+        text-align: center;
+    }
+    
+.bas-du-page .share{
+        padding:1rem 0;
+    }
+    
+.bas-du-page .share a{
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        color: #a60d1a;
+        border:var(--border);
+        margin:.3rem;
+        border-radius: 50%;
+    }
+    
+.bas-du-pagefooter .share a:hover{
+        background-color: var(--main-color);
+    }
+    
+.bas-du-page .links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding:2rem 0;
+        gap:1rem;
+    }
+    
+.bas-du-page .links a{
+        padding:.7rem 2rem;
+        color:black;
+        border:var(--border);
+        font-size: 2rem;
+    }
+    
+.bas-du-page .links a:hover{
+        background:var(--main-color);
+    }
+    
+.bas-du-page .credit{
+        font-size: 20px;
+        color:black;
+        font-weight: lighter;
+        padding:1.5rem;
+    }
+    
+.bas-du-page .credit span{
+        color:var(--main-color);
+    
+    }
+    
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+

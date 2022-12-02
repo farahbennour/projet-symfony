@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The puppy Shop</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- header of the page!-->
+    <div class="tetedupage">
+    <img id= 'logo' src="{{asset('img/img5.PNG')}}"  align=left >
+    <br>
+    <ul class="tete-list">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#About">About</a></li>
+    <li><a href="#Menu">Menu</a></li>
+    <li><a target="_blank" href="/contactus">Contact</a></li>
+    </ul>  
+    <!--<div class="tete-icons">!-->
+    
+    
+    <div class="cart-items-container">
+        <div class="cart-item">
+            <span class="fas fa-times"></span>
+            <img src="Img2.jpg" alt="">
+            <div class="content">
+                <h3>cart item 01</h3>
+                <div class="price">300Dt/-</div>
+            </div>
+        </div>
+    </div>
+
+   </div> <br><br> <br>
+    <hr>
+
+    <!-- home section-->
+    <div id="home">
+    <img id='photo_home' src="{{asset('img/img4.JPG')}}"  >
+       <div class="text1 " > <strong> Puppy Shop</strong> </div>
+       <div class="text2 " > <strong> Are you a dog lover ! <br>Are you reasearching for different race of dogs<br>
+	   Puppy Shop give you the opportunity to <br>have your own one with just one click  </strong> </div>
+    </div> 
+    <br><br>
+
+    <!-- About Section-->
+
+    <p id="About" align="center" style="font-size: 40px;font-family: fangsong ;"><strong>About Us</strong><p> <br>
+    
+    <div class="transiter">
+    <div class="transiter1">
+    <img id="img_about" src="{{asset('img/img6.JPG')}}" > 
+    </div>
+    <div class="transiter2">
+    <h1 style="margin: top 10% ; font-family: fangsong;font-size: 35px ; "><blink><i> What is Puppy Shop about ?</i></blink></h1><br>
+    <p style="font-size: 20px ;" >Getting a puppy is such an exciting and happy time, but there are so many things you need to buy for your new pup; leads, bowls, beds, toys, food, toilet training stuff… the list goes on.
+
+        We offer a one-stop puppy shop allowing you the ease of shopping from home online and grabbing all of the puppy essentials you will ever need.
+        
+        So if you are looking for one place to pick up everything you need for your new fur baby, you have come to the right place! If you are unsure about what you need to get to set up your new puppy pad, check out our puppy tips and our recommended products to buy to get you sorted.</p>
+    </div> </div>
+
+    <br> <br>
+
+
+    <!-- Menu Section-->
+
+    <p id="Menu" style="font-size: 40px;font-family: fangsong ;"><strong>Menu</strong><p><br> 
+    <center><p>Click on titles and read about this races before buying</p></center><br><br>
+    
+    <div id="menu-container">
+        <div class="box">
+            <img src="{{asset('img/img2.JPG')}}" > <br>
+            <a target="_blank" href="https://en.wikipedia.org/wiki/Bulldog">English BullDog</a><br>
+            <div class="content">
+                 <strong><p>Prix : 250dt</p></strong> <br>
+                 <input type=button value="Passer une commande" class="btn" onclick="window.location.href = '/contactus';" />
+                </div>
+        </div>
+
+        <div class="box">
+             <img src="{{asset('img/img1.JPG')}}"   > <br>
+             <a target="_blank" href="https://www.utahbernedoodle.com/what-is-a-mini-bernedoodle.html">Bernedoodle Min</a><br>
+             <div class="content">
+                <strong><p>Prix : 150Dt</p> </strong><br>
+                <input type=button value="Passer une commande" class="btn" onclick="window.location.href = '/contactus';" />
+              </div>  
+        </div>    
+        
+        <div class="box">
+            <img  src="{{asset('img/img3.JPG')}}" > <br>
+            <a target="_blank" href="https://fr.wikipedia.org/wiki/Golden_retriever">Golden Retriever</a><br>
+             <div class="content">
+               <strong> <p>Prix : 300Dt</p>  </strong><br>
+               <input type=button value="Passer une commande" class="btn" onclick="window.location.href = '/contactus';" />
+            </div>
+        </div>     
+     
+        
+     </div>
+     
+
+
+    <br><br><br><br>
+
+ <div class="bas-du-page">
+
+        <div class="share">
+            <a target="_blank" href="https://www.google.com/maps/place/The+Puppy+Shop/@41.850399,-87.796179,15z/data=!4m5!3m4!1s0x0:0xa68aa5157e213bb6!8m2!3d41.8503949!4d-87.7961698" class="fas fa-map-marker-alt	"></a>
+            <a target="_blank" href="https://www.facebook.com/berwyngroomer/" class="fab fa-facebook-f"></a>
+            <a target="_blank" href="https://www.instagram.com/berwyngroomer/" class="fab fa-instagram"></a>
+        </div>
+    
+        <div class="links">
+            <a href="#home">home</a>
+            <a href="#About">about</a>
+            <a href="#Menu">menu</a>
+        </div>
+    
+        <div class="credit"><b>created by </b><span> Chayma Elkout && Farah Bennour </span> | <b> all rights reserved </b> </div>
+    
+    </div>
+
+<style>*{
+box-sizing: border-box;
+}
+
+.tetedupage{
+    position: fixed ;
+    display: flex;
+    background-color:  #f3cf6c  ;
+    width: 100%;
+    top: 0;
+    margin:auto;
+}
+.tete-list{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    
+}
+
+#cart-btn{
+        margin-top: 8px;
+        color:rgb(40, 40, 40);
+        cursor: pointer;
+        font-size: 1.75rem;
+        margin-left: 40%;
+        justify-content: space-evenly;
+
+}
+
+
+#photo_home {
+   
+    width: 100%;
+    height: 600px;
+    display: block;   
+ }
+
+#logo {
+    width: 60px; 
+    height: 60px;
+    margin-right: 20% ;
+    margin-left: 2cm;
+}
+#home {
+    text-align: center;
+  }
+.text1 {
+    position: absolute;
+    top:30%;
+    right: 66%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: fangsong;
+    font-size: 44px ;
+}
+.text2 {
+    position: absolute;
+    top:50%;
+    right:55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px ;
+}
+.cart-items-container{
+    position: absolute;
+    top:100%; right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: #fff;
+    padding:0 1.5rem;
+}
+
+.cart-items-container:active{
+    right: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin-top: 7px ;
+	padding:0px
+}
+
+ul li {
+	width:  80px ;
+	float: left;
+    
+}
+
+li a {
+	display : block ;
+    color : #272626;
+	padding: 8px 0px 8px 16px ;
+	text-decoration:inherit;
+    text-transform: uppercase;
+}
+.tete-list a:hover{
+   background: #ffffffec ; 
+   border-radius: 0.3rem
+}
+
+#img_about{
+    width: 750px ;
+    height:750px ;
+    margin-left: 10%;
+    margin-top: -35% ;
+}
+#img_contact{
+    width: 700px ;
+    height:300px ;
+    margin-left: 10%;
+}
+.transiter2{
+    margin-left:60% ;
+}
+.transiter1{
+    float:left ;
+    margin: left 1cm;
+}
+#id{
+    margin: top 10% ; font-family: fangsong; font-size: 20px ; margin : left 10% ;
+}
+
+#menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, auto));
+    gap: 1.5rem;
+    margin-top: 2rem ;
+    margin-left: 5px;
+   
+    
+}
+
+#menu-container .box {
+    position: relative;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    background: rgb(254, 250, 250);
+    border: 1px solid rgb(160, 51, 51);
+}
+#menu-container .box:hover{
+    box-shadow:10px 10px 20px 20px #969292 inset;
+}
+
+
+
+#menu-container img{
+    width : 70vw;
+    height : 70vh;
+    max-width : 400px;
+    max-height : 400px;
+    object-fit: contain;
+    object-position: center;
+    padding: 20px;
+    border-radius: 0.5rem;
+    margin-left: 40px;
+}
+#menu-container .box a {
+    justify-content: center;
+    font-size: 1rem ;
+    font-weight: 600 ;
+    text-transform: uppercase;
+    margin: 0.5rem 0 0.5rem;
+    margin-left: 140px;
+}
+
+#menu-container .box a:visited {
+    color:rgb(160, 51, 51);
+}
+
+
+#menu-container .box .content {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+}
+#menu-container .box .content p {
+    padding: 0 1rem ;
+    color: rgb(5, 5, 5);
+    background-color: #f3cf6c;
+    border-radius: 4px;
+    font-weight: 500;
+    
+}
+#menu-container .box .content input{
+    padding: 0 1rem;
+    color: rgb(22, 21, 21);
+    border: 2px solid #f3cf6c;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+#menu-container .box .content input:hover{
+    transition: 0.2s all linear;
+    background: #f3d172;
+}
+#menu-container .box:hover{
+    background:  #e2e2e2 ;
+}
+
+
+.bas-du-page{
+        background: #f3d172;
+        text-align: center;
+    }
+    
+.bas-du-page .share{
+        padding:1rem 0;
+    }
+    
+.bas-du-page .share a{
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        font-size: 2rem;
+        color: #a60d1a;
+        border:var(--border);
+        margin:.3rem;
+        border-radius: 50%;
+    }
+    
+.bas-du-pagefooter .share a:hover{
+        background-color: var(--main-color);
+    }
+    
+.bas-du-page .links{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding:2rem 0;
+        gap:1rem;
+    }
+    
+.bas-du-page .links a{
+        padding:.7rem 2rem;
+        color:black;
+        border:var(--border);
+        font-size: 2rem;
+    }
+    
+.bas-du-page .links a:hover{
+        background:var(--main-color);
+    }
+    
+.bas-du-page .credit{
+        font-size: 20px;
+        color:black;
+        font-weight: lighter;
+        padding:1.5rem;
+    }
+    
+.bas-du-page .credit span{
+        color:var(--main-color);
+    
+    }
+    
+</style>
+</body>
+</html>
